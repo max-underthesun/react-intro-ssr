@@ -15,12 +15,6 @@ class CatalogPage extends React.Component {
   }
 }
 
-// CatalogPage.propTypes = {
-//   products: PropTypes.arrayOf(
-//     PropTypes.shape(Catalog.propTypes)
-//   )
-// };
-
 CatalogPage.propTypes = {
   products: PropTypes.arrayOf(
     PropTypes.shape({

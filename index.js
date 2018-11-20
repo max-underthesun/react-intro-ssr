@@ -5,9 +5,7 @@ const render = require('./render').default;
 const app = express();
 
 const publicDir = require('path').join(__dirname, '/static');
-// console.log(publicDir);
 app.use(express.static(publicDir));
-// app.use(express.static('static/images'));
 
 app.get('/', async (req, res) => {
   const response = `
