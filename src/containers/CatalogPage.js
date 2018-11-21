@@ -1,28 +1,28 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import { PRODUCTS } from 'constants/Products';
-
-import Catalog from 'components/Catalog';
+import Catalog from 'src/components/Catalog';
+import ProductCard from 'src/components/ProductCard';
 
 class CatalogPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { products: [] };
-  }
-
-  componentDidMount() {
-    this.fetchProducts();
-  }
-
-  fetchProducts() {
-    this.setState({ products: PRODUCTS });
+    this.products = props.products;
   }
 
   render() {
-    const { products } = this.state;
-    return <Catalog products={ products }></Catalog>;
+    return <Catalog products={ this.products }></Catalog>;
   }
 }
+
+CatalogPage.propTypes = {
+  products: PropTypes.arrayOf(
+    PropTypes.shape({
+      ...ProductCard.propTypes,
+      id: PropTypes.string.isRequired
+    })
+  ).isRequired
+};
 
 export default CatalogPage;
 

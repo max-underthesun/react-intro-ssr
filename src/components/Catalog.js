@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import ProductCard from 'components/ProductCard';
+import ProductCard from 'src/components/ProductCard';
 
 const style = {
   listStyle: 'none'
@@ -12,7 +12,7 @@ const Catalog = ({ products }) => (
     {
       products.map(function(product) {
         return (
-          <li  key={ product.title }>
+          <li  key={ product.id }>
             <ProductCard {...product}></ProductCard>
           </li>
         );
