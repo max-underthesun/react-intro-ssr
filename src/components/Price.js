@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { priceFormattedDollars } from '../helpers/formatters';
+import { priceFormattedDollars } from 'src/helpers/formatters';
 
 const Price = ({ price }) => (
   <div>

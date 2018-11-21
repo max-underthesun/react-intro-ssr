@@ -1,7 +1,9 @@
+require('app-module-path').addPath(__dirname);
+
 const express = require('express');
 require('@babel/register');
 require('@babel/polyfill');
-const render = require('./render').default;
+const render = require('render').default;
 const app = express();
 
 const publicDir = require('path').join(__dirname, '/static');

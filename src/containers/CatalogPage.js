@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Catalog from '../components/Catalog';
-import ProductCard from '../components/ProductCard';
+import Catalog from 'src/components/Catalog';
+import ProductCard from 'src/components/ProductCard';
 
 class CatalogPage extends React.Component {
   constructor(props) {

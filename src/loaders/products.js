@@ -1,4 +1,4 @@
-import { PRODUCTS } from '../constants/Products';
+import { PRODUCTS } from 'src/constants/Products';
 
 const fetchProducts = () => {
   return PRODUCTS;

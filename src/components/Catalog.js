@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import ProductCard from './ProductCard';
+import ProductCard from 'src/components/ProductCard';
 
 const style = {
   listStyle: 'none'

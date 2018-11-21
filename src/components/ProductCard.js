@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Image from './Image';
-import TextBox from './TextBox';
-import Price from './Price';
+import Image from 'src/components/Image';
+import TextBox from 'src/components/TextBox';
+import Price from 'src/components/Price';
 
 const ProductCard = (props) => (
   <div>

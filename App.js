@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import ProductCard from './src/components/ProductCard';
-import CatalogPage from './src/containers/CatalogPage';
+import ProductCard from 'src/components/ProductCard';
+import CatalogPage from 'src/containers/CatalogPage';
 
 const App = ({ products }) => (
   <div>
